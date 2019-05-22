@@ -1,0 +1,25 @@
+{% extends "tables/table-paginated.html.twig" %}
+
+{% block table %}
+    <table id="{{table.id}}" class="tablesorter table table-bordered table-hover table-striped" data-sortlist="{{table.sortlist}}">
+        <thead>
+            <tr>
+                <th class="sorter-metanum" data-column-name="address" data-column-template="#order-table-column-address" data-priority="1">{{translate('ADDRESS')}} <i class="fa fa-sort"></i></th>
+                <th class="sorter-metatext" data-column-name="currency" data-column-template="#order-table-column-currency" data-priority="1">{{translate('CURRENCY')}} <i class="fa fa-sort"></i></th>
+                <th class="sorter-metanum" data-column-name="amount" data-column-template="#order-table-column-amount" data-priority="1">{{translate("AMOUNT")}} <i class="fa fa-sort"></i></th>
+                <th class="sorter-metatnum" data-column-name="processed" data-column-template="#order-table-column-processed" data-priority="1">{{translate("PROCESSED ")}} <i class="fa fa-sort"></i></th>
+                <th class="sorter-metatnum" data-column-name="transactions_id" data-column-template="#order-table-column-transactions_id" data-priority="1">{{translate("TRANSACTION ID")}} <i class="fa fa-sort"></i></th>
+                <th class="sorter-metatnum" data-column-name="date" data-column-template="#order-table-column-date" data-priority="1">{{translate("DATE ")}} <i class="fa fa-sort"></i></th>                 
+        
+            </tr>
+            </thead>
+        <tbody>
+        </tbody>
+    </table>
+{% endblock %}
+{% block table_cell_templates %}
+{% verbatim %}
+
+
+ {% endverbatim %}
+{% endblock %}

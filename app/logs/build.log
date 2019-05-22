@@ -1,0 +1,369 @@
+
+
+/usr/local/bin/node /home/sqoin/userfrosting/build/node_modules/.bin/gulp assetsInstall
+
+[10:19:09] Using gulpfile ~/userfrosting/build/gulpfile.esm.js
+[10:19:09] Starting 'assetsInstall'...
+[10:19:09] Legacy frontend vendor assets were deleted. Frontend vendor assets are now installed to 'app/assets'.
+[10:19:09] Installing vendor assets with NPM...
+[10:19:09] Collating dependencies...
+Inspecting template package...
+Package is VALID.
+Inspecting package at ../app/sprinkles/core/package.json
+Package is VALID.
+Starting dependency merge.
+Starting merge of dependencies from package 'undefined'
+Merging dependency type 'dependencies'
+Adding dependency 'bootstrap' with '^3.3.6'.
+Adding dependency 'clipboard' with '^1.5.16'.
+Adding dependency 'font-awesome' with '^4.7.0'.
+Adding dependency 'handlebars' with '^3.0.3'.
+Adding dependency 'jquery' with '^3.2.1'.
+Adding dependency 'jquery-ui' with '^1.12.0'.
+Adding dependency 'jquery-validation' with '~1.14.0'.
+Adding dependency 'select2' with '^4.0.5'.
+Adding dependency 'tablesorter' with '^2.28.5'.
+Adding dependency 'moment' with '^2.17.1'.
+Adding dependency 'speakingurl' with '^11.0.0'.
+Adding dependency 'icheck' with '^1.0.1'.
+Adding dependency 'jquery-slimscroll' with '~1.3.8'.
+Adding dependency 'fastclick' with '^1.0.6'.
+Adding dependency 'ionicons' with '^2.0.1'.
+Adding dependency 'urijs' with '^1.18.4'.
+Finished merge of dependencies from package 'undefined'
+Finished dependency merge.
+Saving generated package to '/home/sqoin/userfrosting/app/assets/package.json'
+All done!
+[10:19:09] Dependency collation complete.
+[10:19:09] Using npm from PATH variable
+[10:19:09] Removing extraneous dependencies
+[10:19:09] CMD: Running command "npm prune"
+[10:19:11] CMD> npm prune: up to date in 0.895s
+[10:19:11] CMD> npm prune: found 0 vulnerabilities
+[10:19:11] CMD> npm prune: 
+[10:19:11] CMD> npm prune: 
+[10:19:11] CMD: Command "npm prune" has completed successfully
+[10:19:11] Installing dependencies
+[10:19:11] CMD: Running command "npm install"
+[10:19:18] CMD> npm install: added 44 packages from 89 contributors and audited 51 packages in 6.252s
+[10:19:18] CMD> npm install: found 2 high severity vulnerabilities
+[10:19:18] CMD> npm install:   run `npm audit fix` to fix them, or `npm audit` for details
+[10:19:18] CMD> npm install: 
+[10:19:18] CMD> npm install: npm notice created a lockfile as package-lock.json. You should commit this file.
+[10:19:18] CMD> npm install: 
+[10:19:18] CMD: Command "npm install" has completed successfully
+[10:19:18] Running audit
+[10:19:18] CMD: Running command "npm audit"
+[10:19:19] CMD> npm audit: === npm audit security report ===                        
+[10:19:19] CMD> npm audit:                                                                                 
+[10:19:19] CMD> npm audit: # Run  npm install handlebars@4.1.2  to resolve 2 vulnerabilities
+[10:19:19] CMD> npm audit: SEMVER WARNING: Recommended action is a potentially breaking change
+[10:19:19] CMD> npm audit: ┌───────────────┬──────────────────────────────────────────────────────────────┐
+[10:19:19] CMD> npm audit: │ High          │ Prototype Pollution                                          │
+[10:19:19] CMD> npm audit: ├───────────────┼──────────────────────────────────────────────────────────────┤
+[10:19:19] CMD> npm audit: │ Package       │ handlebars                                                   │
+[10:19:19] CMD> npm audit: ├───────────────┼──────────────────────────────────────────────────────────────┤
+[10:19:19] CMD> npm audit: │ Dependency of │ handlebars                                                   │
+[10:19:19] CMD> npm audit: ├───────────────┼──────────────────────────────────────────────────────────────┤
+[10:19:19] CMD> npm audit: │ Path          │ handlebars                                                   │
+[10:19:19] CMD> npm audit: ├───────────────┼──────────────────────────────────────────────────────────────┤
+[10:19:19] CMD> npm audit: │ More info     │ https://nodesecurity.io/advisories/755                       │
+[10:19:19] CMD> npm audit: └───────────────┴──────────────────────────────────────────────────────────────┘
+[10:19:19] CMD> npm audit: 
+[10:19:19] CMD> npm audit: 
+[10:19:19] CMD> npm audit: ┌───────────────┬──────────────────────────────────────────────────────────────┐
+[10:19:19] CMD> npm audit: │ High          │ Cross-Site Scripting                                         │
+[10:19:19] CMD> npm audit: ├───────────────┼──────────────────────────────────────────────────────────────┤
+[10:19:19] CMD> npm audit: │ Package       │ handlebars                                                   │
+[10:19:19] CMD> npm audit: ├───────────────┼──────────────────────────────────────────────────────────────┤
+[10:19:19] CMD> npm audit: │ Dependency of │ handlebars                                                   │
+[10:19:19] CMD> npm audit: ├───────────────┼──────────────────────────────────────────────────────────────┤
+[10:19:19] CMD> npm audit: │ Path          │ handlebars                                                   │
+[10:19:19] CMD> npm audit: ├───────────────┼──────────────────────────────────────────────────────────────┤
+[10:19:19] CMD> npm audit: │ More info     │ https://nodesecurity.io/advisories/61                        │
+[10:19:19] CMD> npm audit: └───────────────┴──────────────────────────────────────────────────────────────┘
+[10:19:19] CMD> npm audit: 
+[10:19:19] CMD> npm audit: 
+[10:19:19] CMD> npm audit: found 2 high severity vulnerabilities in 51 scanned packages
+[10:19:19] CMD> npm audit:   2 vulnerabilities require semver-major dependency updates.
+[10:19:19] CMD> npm audit: 
+[10:19:19] CMD: Command "npm audit" has completed with an error
+[10:19:19] There appear to be some vulerabilities within your dependencies. Updating is recommended.
+[10:19:19] Running browserify against npm dependencies with a compatible main entrypoint
+[10:19:21] Finished 'assetsInstall' after 12 s
+
+
+/usr/local/bin/node /var/www/html/userfrosting/build/node_modules/.bin/gulp assetsInstall
+
+[10:49:34] Using gulpfile /var/www/html/userfrosting/build/gulpfile.esm.js
+[10:49:34] Starting 'assetsInstall'...
+[10:49:34] Legacy frontend vendor assets were deleted. Frontend vendor assets are now installed to 'app/assets'.
+[10:49:34] Installing vendor assets with NPM...
+[10:49:34] Collating dependencies...
+Inspecting template package...
+Package is VALID.
+Inspecting package at ../app/sprinkles/core/package.json
+Package is VALID.
+Starting dependency merge.
+Starting merge of dependencies from package 'undefined'
+Merging dependency type 'dependencies'
+Adding dependency 'bootstrap' with '^3.3.6'.
+Adding dependency 'clipboard' with '^1.5.16'.
+Adding dependency 'font-awesome' with '^4.7.0'.
+Adding dependency 'handlebars' with '^3.0.3'.
+Adding dependency 'jquery' with '^3.2.1'.
+Adding dependency 'jquery-ui' with '^1.12.0'.
+Adding dependency 'jquery-validation' with '~1.14.0'.
+Adding dependency 'select2' with '^4.0.5'.
+Adding dependency 'tablesorter' with '^2.28.5'.
+Adding dependency 'moment' with '^2.17.1'.
+Adding dependency 'speakingurl' with '^11.0.0'.
+Adding dependency 'icheck' with '^1.0.1'.
+Adding dependency 'jquery-slimscroll' with '~1.3.8'.
+Adding dependency 'fastclick' with '^1.0.6'.
+Adding dependency 'ionicons' with '^2.0.1'.
+Adding dependency 'urijs' with '^1.18.4'.
+Finished merge of dependencies from package 'undefined'
+Finished dependency merge.
+Saving generated package to '/var/www/html/userfrosting/app/assets/package.json'
+All done!
+[10:49:34] Dependency collation complete.
+[10:49:34] Using npm from PATH variable
+[10:49:34] Removing extraneous dependencies
+[10:49:34] CMD: Running command "npm prune"
+[10:49:40] CMD> npm prune: audited 51 packages in 3.372s
+[10:49:40] CMD> npm prune: found 2 high severity vulnerabilities
+[10:49:40] CMD> npm prune:   run `npm audit fix` to fix them, or `npm audit` for details
+[10:49:40] CMD> npm prune: 
+[10:49:40] CMD: Command "npm prune" has completed successfully
+[10:49:40] Installing dependencies
+[10:49:40] CMD: Running command "npm install"
+[10:49:43] CMD> npm install: audited 51 packages in 1.693s
+[10:49:43] CMD> npm install: found 2 high severity vulnerabilities
+[10:49:43] CMD> npm install:   run `npm audit fix` to fix them, or `npm audit` for details
+[10:49:43] CMD> npm install: 
+[10:49:43] CMD> npm install: npm notice created a lockfile as package-lock.json. You should commit this file.
+[10:49:43] CMD> npm install: 
+[10:49:43] CMD: Command "npm install" has completed successfully
+[10:49:43] Running audit
+[10:49:43] CMD: Running command "npm audit"
+[10:49:45] CMD> npm audit: npm ERR! path /home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e
+[10:49:45] CMD> npm audit: npm ERR! code EACCES
+[10:49:45] CMD> npm audit: npm ERR! errno -13
+[10:49:45] CMD> npm audit: npm ERR! syscall open
+[10:49:45] CMD> npm audit: npm ERR! Error: EACCES: permission denied, open '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e'
+[10:49:45] CMD> npm audit: npm ERR!  { [Error: EACCES: permission denied, open '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e']
+[10:49:45] CMD> npm audit: npm ERR!   cause:
+[10:49:45] CMD> npm audit: npm ERR!    { Error: EACCES: permission denied, open '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e'
+[10:49:45] CMD> npm audit: npm ERR!      errno: -13,
+[10:49:45] CMD> npm audit: npm ERR!      code: 'EACCES',
+[10:49:45] CMD> npm audit: npm ERR!      syscall: 'open',
+[10:49:45] CMD> npm audit: npm ERR!      path:
+[10:49:45] CMD> npm audit: npm ERR!       '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e' },
+[10:49:45] CMD> npm audit: npm ERR!   isOperational: true,
+[10:49:45] CMD> npm audit: npm ERR!   stack:
+[10:49:45] CMD> npm audit: npm ERR!    'Error: EACCES: permission denied, open \'/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e\'',
+[10:49:45] CMD> npm audit: npm ERR!   errno: -13,
+[10:49:45] CMD> npm audit: npm ERR!   code: 'EACCES',
+[10:49:45] CMD> npm audit: npm ERR!   syscall: 'open',
+[10:49:45] CMD> npm audit: npm ERR!   path:
+[10:49:45] CMD> npm audit: npm ERR!    '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e' }
+[10:49:45] CMD> npm audit: npm ERR! 
+[10:49:45] CMD> npm audit: npm ERR! The operation was rejected by your operating system.
+[10:49:45] CMD> npm audit: npm ERR! It is likely you do not have the permissions to access this file as the current user
+[10:49:45] CMD> npm audit: npm ERR! 
+[10:49:45] CMD> npm audit: npm ERR! If you believe this might be a permissions issue, please double-check the
+[10:49:45] CMD> npm audit: npm ERR! permissions of the file and its containing directories, or try running
+[10:49:45] CMD> npm audit: npm ERR! the command again as root/Administrator (though this is not recommended).
+[10:49:45] CMD> npm audit: 
+[10:49:45] CMD> npm audit: npm ERR! A complete log of this run can be found in:
+[10:49:45] CMD> npm audit: npm ERR!     /home/sqoin/.npm/_logs/2019-05-13T09_49_45_143Z-debug.log
+[10:49:45] CMD> npm audit: 
+[10:49:45] CMD: Command "npm audit" has completed with an error
+[10:49:45] There appear to be some vulerabilities within your dependencies. Updating is recommended.
+[10:49:45] Running browserify against npm dependencies with a compatible main entrypoint
+[10:49:46] Finished 'assetsInstall' after 13 s
+
+
+/usr/local/bin/node /var/www/html/userfrosting/build/node_modules/.bin/gulp assetsInstall
+
+[11:15:21] Using gulpfile /var/www/html/userfrosting/build/gulpfile.esm.js
+[11:15:21] Starting 'assetsInstall'...
+[11:15:21] Legacy frontend vendor assets were deleted. Frontend vendor assets are now installed to 'app/assets'.
+[11:15:21] Installing vendor assets with NPM...
+[11:15:21] Collating dependencies...
+Inspecting template package...
+Package is VALID.
+Inspecting package at ../app/sprinkles/core/package.json
+Package is VALID.
+Starting dependency merge.
+Starting merge of dependencies from package 'undefined'
+Merging dependency type 'dependencies'
+Adding dependency 'bootstrap' with '^3.3.6'.
+Adding dependency 'clipboard' with '^1.5.16'.
+Adding dependency 'font-awesome' with '^4.7.0'.
+Adding dependency 'handlebars' with '^3.0.3'.
+Adding dependency 'jquery' with '^3.2.1'.
+Adding dependency 'jquery-ui' with '^1.12.0'.
+Adding dependency 'jquery-validation' with '~1.14.0'.
+Adding dependency 'select2' with '^4.0.5'.
+Adding dependency 'tablesorter' with '^2.28.5'.
+Adding dependency 'moment' with '^2.17.1'.
+Adding dependency 'speakingurl' with '^11.0.0'.
+Adding dependency 'icheck' with '^1.0.1'.
+Adding dependency 'jquery-slimscroll' with '~1.3.8'.
+Adding dependency 'fastclick' with '^1.0.6'.
+Adding dependency 'ionicons' with '^2.0.1'.
+Adding dependency 'urijs' with '^1.18.4'.
+Finished merge of dependencies from package 'undefined'
+Finished dependency merge.
+Saving generated package to '/var/www/html/userfrosting/app/assets/package.json'
+All done!
+[11:15:21] Dependency collation complete.
+[11:15:21] Using npm from PATH variable
+[11:15:21] Removing extraneous dependencies
+[11:15:21] CMD: Running command "npm prune"
+[11:15:23] CMD> npm prune: audited 51 packages in 1.511s
+[11:15:23] CMD> npm prune: found 2 high severity vulnerabilities
+[11:15:23] CMD> npm prune:   run `npm audit fix` to fix them, or `npm audit` for details
+[11:15:23] CMD> npm prune: 
+[11:15:23] CMD: Command "npm prune" has completed successfully
+[11:15:23] Installing dependencies
+[11:15:23] CMD: Running command "npm install"
+[11:15:25] CMD> npm install: audited 51 packages in 1.044s
+[11:15:25] CMD> npm install: found 2 high severity vulnerabilities
+[11:15:25] CMD> npm install:   run `npm audit fix` to fix them, or `npm audit` for details
+[11:15:25] CMD> npm install: 
+[11:15:25] CMD> npm install: npm notice created a lockfile as package-lock.json. You should commit this file.
+[11:15:25] CMD> npm install: 
+[11:15:25] CMD: Command "npm install" has completed successfully
+[11:15:25] Running audit
+[11:15:25] CMD: Running command "npm audit"
+[11:15:27] CMD> npm audit: npm ERR! path /home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e
+[11:15:27] CMD> npm audit: npm ERR! code EACCES
+[11:15:27] CMD> npm audit: npm ERR! errno -13
+[11:15:27] CMD> npm audit: npm ERR! syscall open
+[11:15:27] CMD> npm audit: npm ERR! Error: EACCES: permission denied, open '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e'
+[11:15:27] CMD> npm audit: npm ERR!  { [Error: EACCES: permission denied, open '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e']
+[11:15:27] CMD> npm audit: npm ERR!   cause:
+[11:15:27] CMD> npm audit: npm ERR!    { Error: EACCES: permission denied, open '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e'
+[11:15:27] CMD> npm audit: npm ERR!      errno: -13,
+[11:15:27] CMD> npm audit: npm ERR!      code: 'EACCES',
+[11:15:27] CMD> npm audit: npm ERR!      syscall: 'open',
+[11:15:27] CMD> npm audit: npm ERR!      path:
+[11:15:27] CMD> npm audit: npm ERR!       '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e' },
+[11:15:27] CMD> npm audit: npm ERR!   isOperational: true,
+[11:15:27] CMD> npm audit: npm ERR!   stack:
+[11:15:27] CMD> npm audit: npm ERR!    'Error: EACCES: permission denied, open \'/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e\'',
+[11:15:27] CMD> npm audit: npm ERR!   errno: -13,
+[11:15:27] CMD> npm audit: npm ERR!   code: 'EACCES',
+[11:15:27] CMD> npm audit: npm ERR!   syscall: 'open',
+[11:15:27] CMD> npm audit: npm ERR!   path:
+[11:15:27] CMD> npm audit: npm ERR!    '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e' }
+[11:15:27] CMD> npm audit: npm ERR! 
+[11:15:27] CMD> npm audit: npm ERR! The operation was rejected by your operating system.
+[11:15:27] CMD> npm audit: npm ERR! It is likely you do not have the permissions to access this file as the current user
+[11:15:27] CMD> npm audit: npm ERR! 
+[11:15:27] CMD> npm audit: npm ERR! If you believe this might be a permissions issue, please double-check the
+[11:15:27] CMD> npm audit: npm ERR! permissions of the file and its containing directories, or try running
+[11:15:27] CMD> npm audit: npm ERR! the command again as root/Administrator (though this is not recommended).
+[11:15:27] CMD> npm audit: 
+[11:15:27] CMD> npm audit: npm ERR! A complete log of this run can be found in:
+[11:15:27] CMD> npm audit: npm ERR!     /home/sqoin/.npm/_logs/2019-05-13T10_15_27_544Z-debug.log
+[11:15:27] CMD> npm audit: 
+[11:15:27] CMD: Command "npm audit" has completed with an error
+[11:15:27] There appear to be some vulerabilities within your dependencies. Updating is recommended.
+[11:15:27] Running browserify against npm dependencies with a compatible main entrypoint
+[11:15:29] Finished 'assetsInstall' after 7.45 s
+
+
+/usr/local/bin/node /var/www/html/userfrosting/build/node_modules/.bin/gulp assetsInstall
+
+[11:23:25] Using gulpfile /var/www/html/userfrosting/build/gulpfile.esm.js
+[11:23:25] Starting 'assetsInstall'...
+[11:23:25] Legacy frontend vendor assets were deleted. Frontend vendor assets are now installed to 'app/assets'.
+[11:23:25] Installing vendor assets with NPM...
+[11:23:25] Collating dependencies...
+Inspecting template package...
+Package is VALID.
+Inspecting package at ../app/sprinkles/core/package.json
+Package is VALID.
+Starting dependency merge.
+Starting merge of dependencies from package 'undefined'
+Merging dependency type 'dependencies'
+Adding dependency 'bootstrap' with '^3.3.6'.
+Adding dependency 'clipboard' with '^1.5.16'.
+Adding dependency 'font-awesome' with '^4.7.0'.
+Adding dependency 'handlebars' with '^3.0.3'.
+Adding dependency 'jquery' with '^3.2.1'.
+Adding dependency 'jquery-ui' with '^1.12.0'.
+Adding dependency 'jquery-validation' with '~1.14.0'.
+Adding dependency 'select2' with '^4.0.5'.
+Adding dependency 'tablesorter' with '^2.28.5'.
+Adding dependency 'moment' with '^2.17.1'.
+Adding dependency 'speakingurl' with '^11.0.0'.
+Adding dependency 'icheck' with '^1.0.1'.
+Adding dependency 'jquery-slimscroll' with '~1.3.8'.
+Adding dependency 'fastclick' with '^1.0.6'.
+Adding dependency 'ionicons' with '^2.0.1'.
+Adding dependency 'urijs' with '^1.18.4'.
+Finished merge of dependencies from package 'undefined'
+Finished dependency merge.
+Saving generated package to '/var/www/html/userfrosting/app/assets/package.json'
+All done!
+[11:23:26] Dependency collation complete.
+[11:23:26] Using npm from PATH variable
+[11:23:26] Removing extraneous dependencies
+[11:23:26] CMD: Running command "npm prune"
+[11:23:38] CMD> npm prune: audited 51 packages in 8.837s
+[11:23:38] CMD> npm prune: found 2 high severity vulnerabilities
+[11:23:38] CMD> npm prune:   run `npm audit fix` to fix them, or `npm audit` for details
+[11:23:38] CMD> npm prune: 
+[11:23:38] CMD: Command "npm prune" has completed successfully
+[11:23:38] Installing dependencies
+[11:23:38] CMD: Running command "npm install"
+[11:23:42] CMD> npm install: audited 51 packages in 3.023s
+[11:23:42] CMD> npm install: found 2 high severity vulnerabilities
+[11:23:42] CMD> npm install:   run `npm audit fix` to fix them, or `npm audit` for details
+[11:23:42] CMD> npm install: 
+[11:23:42] CMD> npm install: npm notice created a lockfile as package-lock.json. You should commit this file.
+[11:23:42] CMD> npm install: 
+[11:23:42] CMD: Command "npm install" has completed successfully
+[11:23:42] Running audit
+[11:23:42] CMD: Running command "npm audit"
+[11:23:44] CMD> npm audit: npm ERR! path /home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e
+[11:23:44] CMD> npm audit: npm ERR! code EACCES
+[11:23:44] CMD> npm audit: npm ERR! errno -13
+[11:23:44] CMD> npm audit: npm ERR! syscall open
+[11:23:44] CMD> npm audit: npm ERR! Error: EACCES: permission denied, open '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e'
+[11:23:44] CMD> npm audit: npm ERR!  { [Error: EACCES: permission denied, open '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e']
+[11:23:44] CMD> npm audit: npm ERR!   cause:
+[11:23:44] CMD> npm audit: npm ERR!    { Error: EACCES: permission denied, open '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e'
+[11:23:44] CMD> npm audit: npm ERR!      errno: -13,
+[11:23:44] CMD> npm audit: npm ERR!      code: 'EACCES',
+[11:23:44] CMD> npm audit: npm ERR!      syscall: 'open',
+[11:23:44] CMD> npm audit: npm ERR!      path:
+[11:23:44] CMD> npm audit: npm ERR!       '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e' },
+[11:23:44] CMD> npm audit: npm ERR!   isOperational: true,
+[11:23:44] CMD> npm audit: npm ERR!   stack:
+[11:23:44] CMD> npm audit: npm ERR!    'Error: EACCES: permission denied, open \'/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e\'',
+[11:23:44] CMD> npm audit: npm ERR!   errno: -13,
+[11:23:44] CMD> npm audit: npm ERR!   code: 'EACCES',
+[11:23:44] CMD> npm audit: npm ERR!   syscall: 'open',
+[11:23:44] CMD> npm audit: npm ERR!   path:
+[11:23:44] CMD> npm audit: npm ERR!    '/home/sqoin/.npm/index-v5/2b/b7/5605911c6e8a323c274c5905a25a7425d38df8289efa2b50cc0e37b1dd4e' }
+[11:23:44] CMD> npm audit: npm ERR! 
+[11:23:44] CMD> npm audit: npm ERR! The operation was rejected by your operating system.
+[11:23:44] CMD> npm audit: npm ERR! It is likely you do not have the permissions to access this file as the current user
+[11:23:44] CMD> npm audit: npm ERR! 
+[11:23:44] CMD> npm audit: npm ERR! If you believe this might be a permissions issue, please double-check the
+[11:23:44] CMD> npm audit: npm ERR! permissions of the file and its containing directories, or try running
+[11:23:44] CMD> npm audit: npm ERR! the command again as root/Administrator (though this is not recommended).
+[11:23:44] CMD> npm audit: 
+[11:23:44] CMD> npm audit: npm ERR! A complete log of this run can be found in:
+[11:23:44] CMD> npm audit: npm ERR!     /home/sqoin/.npm/_logs/2019-05-20T10_23_44_624Z-debug.log
+[11:23:44] CMD> npm audit: 
+[11:23:44] CMD: Command "npm audit" has completed with an error
+[11:23:44] There appear to be some vulerabilities within your dependencies. Updating is recommended.
+[11:23:44] Running browserify against npm dependencies with a compatible main entrypoint
+[11:23:46] Finished 'assetsInstall' after 21 s

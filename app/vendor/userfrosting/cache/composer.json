@@ -1,0 +1,33 @@
+{
+    "name": "userfrosting/cache",
+    "type": "library",
+    "description": "Cache module for UserFrosting",
+    "keywords": ["userfrosting", "cache"],
+    "homepage": "https://github.com/userfrosting/Cache",
+    "license" : "MIT",
+    "authors" : [
+        {
+            "name": "Louis Charette",
+            "homepage": "https://github.com/lcharette"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "illuminate/cache": "^5.4",
+        "illuminate/filesystem": "^5.4",
+        "illuminate/container": "^5.4",
+        "illuminate/Config": "^5.4",
+        "illuminate/redis": "^5.4",
+        "predis/predis": "~1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.13",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "UserFrosting\\Cache\\": "src"
+        }
+    }
+}

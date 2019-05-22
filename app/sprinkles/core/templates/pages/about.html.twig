@@ -1,0 +1,67 @@
+{% extends "pages/abstract/default.html.twig" %}
+
+{% set page_active = "about" %}
+
+{# Overrides blocks in head of base template #}
+{% block page_title %}{{translate("ABOUT")}}{% endblock %}
+
+{% block page_description %}{% endblock %}
+
+{% block body_matter %}
+
+    <!-- Intro Content -->
+    <div class="row">
+        <div class="col-md-6">
+            <img class="img-responsive" src="http://localhost/public/assets-raw/userfrosting/images/SAGE_IPS.png" alt="SAGE">
+        </div>
+        <div class="col-md-6" style="color:#f7f7f7">
+            <h2>About Sagecity IPS</h2>
+            <p>SageCity’s Internal Payments System (IPS) is a financial infrastructure tool for enterprise. It allows for immutable tracking and management of a user's assets and data but primarily focuses on  financial balances. The main benefit of this innovation is that by using sidechain technology on the SageCity network, enterprises can accurately distinguish users and their financial resources in a secure and low-cost manner. IPS works in conjunction with payment processors by tracking payments received into a user's account and assigning them representative tokens for that payment. </p>
+        <a href="http://localhost/public/account/register" >
+            <button type="button" style="background-color:#f7f7f7;color:#111111;margin-left:auto;margin-right:0;display:block;margin-top:0%;margin-bottom:10%;"> Sign up</button>
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+    <!-- Team Members -->
+    <div class="row">
+       
+        </br></br>
+    
+        <div class="col-md-4 text-center">
+            <div class="thumbnail" style="background-color:#111111; height:464px;">
+                <img class="img-responsive" src="http://localhost/public/assets-raw/userfrosting/images/gain_insight.png"style="margin-top: 5%" >
+                </br>
+                <div class="caption" style="color:#f7f7f7;margin-top: 35px">
+                    <h3>Gain insight</h3>
+                    <p>Your sidechain is a highly advanced database. Get real time infomation on the data and transactions occurring on your sidechain. Knowing your users and how they interact can provide you with valuable knowledge to improve their experience even further
+</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="thumbnail" style="background-color:#111111">
+                <img class="img-responsive" src="http://localhost/public/assets-raw/userfrosting/images/save_money.png">
+                <div class="caption" style="color:#f7f7f7">
+                    <h3>Take control and save money</h3>
+                    <p>We need faciliators to help us in our business operations but in doing so we give them immense power. Sagecity IPS takes back ownership from financial and data middlemen by limiting their involvement in your operations and saving you money.
+</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="thumbnail" style="background-color:#111111">
+                <img class="img-responsive" src="http://localhost/public/assets-raw/userfrosting/images/adaptable.png">
+                <div class="caption" style="color:#f7f7f7">
+                    <h3>Adaptable and future proof</h3>
+                    <p>Sagecity’s IPS provides you with a strong foundation for your enterprise. Embrace blockchain technology and you can utilise sagecity for more than just financial management
+</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <!-- /.row -->
+{% endblock %}
